@@ -92,3 +92,19 @@ function imagesMarkup(images) {
 }
 
 galleryEl.innerHTML = imagesMarkup(images);
+
+const lightbox = new SimpleLightbox('.gallery a', {
+  overlay: true,
+  captions: true,
+  captionSelector: 'self',
+  captionType: 'text',
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250,
+  captionClass: 'caption',
+  close: true,
+  showCounter: true,
+  enableKeyboard: true,
+  docClose: true,
+  clasName: 'gallery-item-modal',
+});
