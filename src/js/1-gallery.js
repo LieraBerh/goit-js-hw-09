@@ -90,8 +90,8 @@ galleryEl.innerHTML = imagesMarkup(images);
 const lightbox = new SimpleLightbox('.gallery a', {
   overlay: true,
   captions: true,
-  captionSelector: 'self',
-  captionType: 'text',
+  captionSelector: 'img',
+  captionType: 'attr',
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
